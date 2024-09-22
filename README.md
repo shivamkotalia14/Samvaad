@@ -55,30 +55,39 @@ To set up the Samvaad project locally, follow these steps:
 
 ## Prototype Screenshots: -
    1. **Samvaad Homepage**:
+   
    ![Samvaad Homepage](./imgs/Homepage.png)
 
    2. **About Us**:
+   
    ![About Us](./imgs/Aboutus.png)
 
    3. **Login/Signup**:
+   
    ![Login/Signup](./imgs/login.png)
 
    4. **Courses Available**:
+   
    ![Courses](./imgs/Courese.png)
 
    5. **Playlist**:
+   
    ![Playlist](./imgs/Video.png)
 
    6. **Services**:
+   
    ![Services](./imgs/Services.png)
 
    7. **Gujarati Sign Language Converter**:
+   
    ![GSL](./imgs/GSL.png)
 
    8. **English Sign Language Converter**:
+   
    ![ESL](./imgs/ESL.png)
 
    9. **Contact Us**:
+   
    ![Contact Us](./imgs/Contactus.png)
 
 
