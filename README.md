@@ -50,6 +50,9 @@ To set up the Samvaad project locally, follow these steps:
    - Node.js
    - Python
    - Required libraries and dependencies (as detailed in each folder's README)
+## Prototype Screenshots
+    1. **Samvaad Homepage**:
+![Samvaad Homepage](./imgs/Homepage.png)
 
 ## Usage
 
