@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>SAMVAAD</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('row');
+ 			 }else {
+ 		   $('nav').removeClass('row');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<div class="logo"><img src="images/icon/logo-1.png" alt="logo"></div>
+			<ul>
+				<li><a  href="">Home</a></li>
+				<li><a href="#portfolio_section">Catalog</a></li>
+				<!-- <li><a href="#team_section">Collaborators</a></li> -->
+				<li class="dropdown">
+					<a href="#" class="dropbtn">Convertor</a>
+					<ul class="dropdown-content">
+						<li><a target="_blank" href="http://localhost:8080">English Convertor</a></li>
+						<li><a target="_blank" href="http://localhost:8000">Gujarati Convertor</a></li>
+						
+					</ul>
+				</li>
+
+				<!-- <li><a href="#">Chatbot</a></li> -->
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact Us</a></li>
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Search..."><img src="images/icon/search.png" alt="search" onclick=slide()></div>
+			<a class="get-started" href="login.html">Register / Login</a>
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu"><!--1-->
+		</nav>
+		<div class="head-container">
+			<div class="quote">
+				<p>Learning is the foundation of progress, the path to success, and the path to enlightenment.</p>
+				<h5>Sign language is a visual-gestural form of communication used primarily by people who are deaf or mute.It uses hand shapes, facial expressions, and body movements to convey meaning. Each sign language has its own grammar and vocabulary.</h5>
+			</div>
+			<div class="svg-image">
+				<img src="https://png.pngtree.com/png-clipart/20220927/original/pngtree-sign-language-communication-for-the-deaf-and-the-disabled-png-image_8635918.png" alt="svg">
+			</div>
+		</div>
+		<div class="side-menu" id="side-menu">
+			<div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
+			<div class="user">
+				<img src="images/creator/humanNotExist1.jpeg" alt="Username">
+				<p>User</p>
+			</div>
+			<ul>
+				<li><a  href="">Home</a></li>
+				<li><a href="#portfolio_section">Catalog</a></li>
+				<!-- <li><a href="#team_section">Collaborators</a></li> -->
+				<li class="dropdown">
+					<a href="#" class="dropbtn">Convertor</a>
+					<ul class="dropdown-content">
+						<li><a target="_blank" href="http://localhost:8080">English Convertor</a></li>
+						<li><a target="_blank" href="http://localhost:8000">Gujrati Convertor</a></li>
+						
+					</ul>
+				</li>
+
+				<!-- <li><a href="http://localhost:3050/">Chatbot</a></li> -->
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact Us</a></li>
+			</ul>
+		</div>
+	</header>
+
+
+<!-- Subjects -->
+	<div class="title">
+		<span><b>Courses available on SAMVAAD</b></span>
+	</div>
+	<br><br>
+	<div class="course">
+		<center><div class="cbox">
+		<div class="det"><a href="subjects/ISL.html">Indian Sign Langauage</a></div>
+		<div class="det"><a href="subjects/ASL.html">American Sign Language</a></div>
+		<div class="det"><a href="subjects/GSL.html">Gujrati Sign Language</a></div>
+	</div></center>
+	<div class="cbox">
+		<div class="det"><a href="subjects/ADC.html">American Deaf Culture</a></div>
+		</div>
+	</div>
+
+	
+<!-- ABOUT -->
+	<div class="diffSection" id="about_section">
+		<center><p style="font-size: 50px; padding: 100px"><b>ABOUT US</b></p></center>
+		<div class="about-content">
+				<div class="side-image">
+					<img class="sideImage" src="https://static.vecteezy.com/system/resources/previews/024/656/760/non_2x/deaf-mute-man-and-woman-are-talking-using-sign-language-and-demonstrating-symbols-with-hands-png.png">
+				</div>
+				<div class="side-text">
+					<h2>Who are we?</h2>
+					<p>We are "Samvaad," a dedicated platform committed to bridging the communication gap for the deaf and mute communities. Our mission is to empower individuals by providing a user-friendly learning app that facilitates the conversion between sign language and English/Gujarati.  <br><br>
+
+						Through our innovative app, we offer interactive learning tools and real-time sign language interpretation, helping users not only communicate effectively but also learn and grow. Our team believes in the power of education and strives to create a seamless experience that fosters independence and confidence.<br><br> Whether for personal, educational, or professional use, Samvaad opens new doors for communication, ensuring no one is left unheard or misunderstood.</p>
+				</div>
+		</div>
+	</div>
+
+
+<!-- Catalog -->
+	<div class="diffSection" id="portfolio_section">
+		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px;"><b>CATALOG</b></p></center>
+		<div class="content">
+			<p>
+				“Samvaad, a dedicated platform committed to bridging the communication gap for the deaf and mute communities. Our mission is to empower individuals by providing a user-friendly learning app that facilitates the conversion between sign language and English/Gujarati. ” 
+			</p>
+		</div>
+	</div>
+	<div class="extra">
+		<p>Our Stats!!!!</p>
+		<div class="smbox">
+		<span><center><div class="data">1000+</div><div class="det">Students Enrolled</div></center></span>
+		<span><center><div class="data">100+</div><div class="det">Lectures Delivered</div></center></span>
+		<span><center><div class="data">10+</div><div class="det">NGO Joined Us</div></center></span>
+		<span><center><div class="data">20+</div><div class="det">experienced Teachers</div></center></span>
+		</div>
+	</div>
+
+
+
+
+<!-- SERVICES -->
+	<div class="service-swipe">
+		<div class="diffSection" id="services_section">
+		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">SERVICES</p></center>
+		</div>
+		<a href="subjects/ADC.html"><div class="s-card"><img src="images/icon/computer-courses.png"><p>Free Sign Language Courses</p></div></a>
+		<a target="_blank" href="http://localhost:8080"><div class="s-card"><img src="https://png.pngtree.com/png-clipart/20230812/original/pngtree-language-convert-communication-book-vector-picture-image_10458687.png"><p>English Language Convertor</p></div></a>
+		<a target="_blank" href="http://localhost:8000"><div class="s-card"><img src="https://th.bing.com/th/id/R.15db4bda6ce96189b7f792408426fb82?rik=emJw0c%2fs2owf%2bQ&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fgujarati-png-file-gujarati-writing-name-png-532.png&ehk=kRv%2b3xDlojCKDAHtNzXwJwX0wTZPZPZt%2fwTOAN64jrQ%3d&risl=&pid=ImgRaw&r=0"><p>Gujarati Langauage Convertor</p></div></a>
+		<a href="#"><div class="s-card"><img src="images/icon/help.png"><p>Chatbot(with video facility)</p></div></a>
+	</div>
+
+<!-- Reviews by Students -->
+<div id="makeitfull">
+	<a href="#review_section"><img src="images/icon/makeitfull.png"></a>
+</div>
+<div class="review">
+	<div class="diffSection" id="review_section">
+		<center><p style="font-size: 40px; padding: 100px; padding-bottom: 40px; color: #2E3D49;">Discover the Voices of Our Students.</p></center>
+	</div>
+	<div class="rev-container">
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/humanNotExist2.jpeg"><p>Arohi</p>
+				<h6>ASL</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					Learning ASL here was fantastic! Clear explanations, engaging exercises. Samvaad's integration of American Sign Language is seamless, enhancing accessibility and empowering communication effortlessly.
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/humanNotExist4.jpeg"><p>Mahima </p>
+				<h6>GSL</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					GSL learning was a breeze! Bite-sized lessons and practical examples. Grasped concepts easily, from variables to classes. Excited to dive into explaination. Thumbs up!!!!!!!!
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/humanNotExist3.jpeg"><p>Manish</p>
+				<h6>Chatbot</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					Samvaad's chatbot offers an impressive video input feature, allowing users to upload videos and receive accurate responses. This innovative approach makes communication smoother for those using sign language, enhancing accessibility and user experience. It's a groundbreaking tool for the deaf and mute communities.
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/humanNotExist1.jpeg"><p>Amit</p>
+				<h6>Gujrati Langauage Convertor</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					Samvaad’s Gujarati Sign Language converter offers seamless translation, making communication easy for Gujarati-speaking deaf and mute users, enhancing accessibility and language learning. Highly recommended.....
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- CONTACT US -->
+	<div class="diffSection" id="contactus_section">
+		<center><p style="font-size: 50px; padding: 100px">Contact Us</p></center>
+		<div class="csec"></div>
+		<div class="back-contact">
+			<div class="cc">
+			<form action="mailto:shivamkotalia@gmail.com" method="post" enctype="text/plain">
+				<label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name <span class="imp">*</span></label><br>
+				<center>
+				<input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
+				</center>
+				<label>Email <span class="imp">*</span></label><br>
+				<input type="email" name="mail" style="width: 100%" required="required"><br>
+				<label>Course Details <span class="imp">*</span></label><br>
+				<input type="text" name="text" style="width: 100%" required="required"><br>
+				<label>Message <span class="imp">*</span></label><br>
+				<input type="text" name="message" style="width: 100%" required="required"><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+			</div>
+		</div>
+	</div>
+
+
+<!-- FEEDBACK -->
+	<div class="title2" id="feedBACK">
+		<span>Feedback</span>
+		<div class="shortdesc2">
+			<p>Your feedback is highly valuable to us. Kindly share your insights so we can enhance our services. We appreciate your input.</p>
+		</div>
+	</div>
+
+	<div class="feedbox">
+		<div class="feed">
+			<form action="mailto:shivamkotalia@gmail.com" method="post" enctype="text/plain">
+				<label>Your Name</label><br>
+				<input type="text" name="" class="fname" required="required"><br>
+				<label>Email</label><br>
+				<input type="email" name="mail" required="required"><br>
+				<label>Your Message</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+		</div>
+	</div>
+<!-- Chatbot -->
+<div id="chatbot-container" class="chatbot-container">
+    <div id="chatbot-toggle" class="chatbot-toggle">
+        <p>Let's discuss</p>  
+        <i class="fas fa-comment-dots" style="margin-left: 8px;"></i>
+    </div>
+    
+    <div id="chatbot-content" class="chatbot-content">
+        <div class="chatbot-header">
+            <p>Let's discuss</p>  
+            <i class="fas fa-comment-dots" style="position: relative; right: 70px;"></i>
+            <span id="chatbot-close" class="chatbot-close">&times;</span>
+        </div>
+        
+        <div class="chatbot-messages">
+			<div class="chatbot-message bot-message">
+				<i class="fas fa-user user-icon"></i> <!-- Replace with actual icon -->
+				<span>Hey folk, what do you want to ask?</span>
+			</div>
+			<!-- Other messages will be appended here -->
+		</div>
+        <div class="chatbot-input-container" style="position: relative; top: -10px;">
+            <input type="text" id="chatbot-input" placeholder="Type your message..." />
+            <button id="chatbot-submit">Send</button>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Sliding Information -->
+	<marquee style="background: linear-gradient(to right, #192ef0, #03d8f9); margin-top: 50px;" direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="20"><div class="marqu">"Education is the catalyst of progress, a bridge from ignorance to enlightenment. It empowers minds, enriches lives, and fuels innovation. Beyond classrooms, it’s a lifelong journey that shapes character, cultivates curiosity, and paves the way for a world where knowledge creates boundless possibilities."
+	</div></marquee>
+
+<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<img src="images/icon/logo-1.png" style="width: 100px; margin-bottom: 10px;">
+				<div class="logo"></div>
+				<div class="social-media">
+					<a href="#"><img src="images/icon\fb.png"></a>
+					<a href="#"><img src="images/icon\insta.png"></a>
+					<a href="#"><img src="images/icon\tt.png"></a>
+					<a href="#"><img src="images/icon\ytube.png"></a>
+					<a href="#"><img src="images/icon\linkedin.png"></a>
+				</div><br><br>
+				<p class="rights-text">Copyright © 2023 Developed By Samvaad All Rights Reserved.</p>
+				<br><p><img src="images/icon/location.png"> A-5, Paschim Vihar, New Delhi 110063</p><br>
+				<p><img src="images/icon/phone.png"> +91-96675-1175<br><img src="images/icon/mail.png">&nbsp; samvaad@info.com</p>
+			</div>
+			<div class="right-col">
+				<h1 style="color: #fff">Our Journal</h1>
+				<div class="border"></div><br>
+				<p>Enter Your Email to get our News and updates.</p>
+				<form class="newsletter-form">
+					<input class="txtb" type="email" placeholder="Enter Your Email">
+					<input class="btn" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</footer>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const chatbotToggle = document.getElementById('chatbot-toggle');
+			const chatbotContent = document.getElementById('chatbot-content');
+			const chatbotClose = document.getElementById('chatbot-close');
+			const chatbotTextInput = document.getElementById('chatbot-input');
+			const chatWindow = document.querySelector('.chatbot-messages');
+			let text = '';
+			let video = null;
+			let videoName = '';
+			let mediaRecorder;
+			let chunks = [];
+		
+			// Automatically open chatbot on page load
+			chatbotContent.style.display = 'block'; // Ensure the chatbot is open
+		
+			// Toggle chatbot visibility
+			chatbotToggle.addEventListener('click', function() {
+				chatbotContent.style.display = chatbotContent.style.display === 'block' ? 'none' : 'block';
+			});
+		
+			chatbotClose.addEventListener('click', function() {
+				chatbotContent.style.display = 'none';
+			});
+		
+			// Handle text change
+			function handleTextChange(e) {
+				text = e.target.value;
+			}
+		
+			// Function to add chat message to the chat window
+			function addChatMessage(message, type) {
+				const messageDiv = document.createElement('div');
+				messageDiv.classList.add('chat-message', type === 'user' ? 'user-message' : 'bot-message');
+				messageDiv.textContent = message;
+				chatWindow.appendChild(messageDiv);
+				chatWindow.scrollTop = chatWindow.scrollHeight; // Scroll to bottom
+			}
+		
+			// Handle form submission
+			async function handleSubmit() {
+				const formData = new FormData();
+				if (text) formData.append('text', text);
+		
+				// Add user message to chat window
+				addChatMessage(text, 'user');
+		
+				try {
+					const response = await fetch('http://localhost:5000/upload', {
+						method: 'POST',
+						body: formData,
+					});
+					const data = await response.json();
+		
+					// Add bot response to chat window
+					addChatMessage(data.message, 'bot');
+		
+					// Clear the inputs
+					text = '';
+					chatbotTextInput.value = '';
+				} catch (error) {
+					console.error('Error uploading data:', error);
+					addChatMessage('Error processing your request. Please try again.', 'bot');
+				}
+			}
+		
+			// Attach event listeners
+			chatbotTextInput.addEventListener('input', handleTextChange);
+			document.getElementById('chatbot-submit').addEventListener('click', handleSubmit);
+		});
+		</script>
+		
+	</body>
+</html>

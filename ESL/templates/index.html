@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Hand Detection</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            color: #fff;
+            margin-bottom: 30px;
+            transition: transform 0.5s ease, text-shadow 0.5s ease;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            letter-spacing: 2px;
+        }
+
+        h1:hover {
+            transform: scale(1.1);
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        #video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 10px solid rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            margin-bottom: 30px;
+            animation: pulse 2s infinite;
+        }
+
+        #video-container img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #video-container img:hover {
+            transform: scale(1.05);
+        }
+
+        #detected-character {
+            font-size: 1.8em;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 15px;
+            background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #detected-character:hover {
+            transform: scale(1.1);
+            background-color: rgba(0, 0, 0, 0.9);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+            }
+            100% {
+                box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+                margin-bottom: 20px;
+            }
+
+            #detected-character {
+                font-size: 1.5em;
+                padding: 10px 20px;
+            }
+
+            #video-container {
+                border-width: 5px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Real-Time English Sign Language Detection</h1>
+    <div id="video-container">
+        <img src="{{ url_for('video_feed') }}" alt="Video feed">
+    </div>
+    <div id="detected-character">Detected English Character: </div>
+
+    <script>
+        // Function to fetch detected character from the server
+        function fetchDetectedCharacter() {
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', '/get_character', true);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    const data = JSON.parse(xhr.responseText);
+                    const detectedCharacterDiv = document.getElementById('detected-character');
+                    detectedCharacterDiv.textContent = 'Detected English Character: ' + data.character;
+                }
+            };
+            xhr.send();
+        }
+
+        // Call the function every 500 milliseconds
+        setInterval(fetchDetectedCharacter, 100);
+    </script>
+</body>
+</html>
